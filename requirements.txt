@@ -4,3 +4,4 @@ matplotlib
 argparse
 Pillow
 scikit-image
+IPython
