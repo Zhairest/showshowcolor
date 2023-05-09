@@ -38,7 +38,7 @@ if file_up is None:
         tens_l_rs = tens_l_rs.cuda()
     img_bw = postprocess_tens(tens_l_orig, torch.cat((0 * tens_l_orig, 0 * tens_l_orig), dim=1))
     out_img_siggraph17 = postprocess_tens(tens_l_orig, colorizer_siggraph17(tens_l_rs).cpu())
-    st.image(out_img_siggraph17, caption='ENd Image.', use_column_width=True)
+    st.image(out_img_siggraph17, caption='Colorful Image.', use_column_width=True)
 
     st.success('successful')
 
@@ -61,7 +61,7 @@ else:
         tens_l_rs = tens_l_rs.cuda()
     img_bw = postprocess_tens(tens_l_orig, torch.cat((0 * tens_l_orig, 0 * tens_l_orig), dim=1))
     out_img_siggraph17 = postprocess_tens(tens_l_orig, colorizer_siggraph17(tens_l_rs).cpu())
-    st.image(out_img_siggraph17, caption='ENd Image.', use_column_width=True)
+    st.image(out_img_siggraph17, caption='Colorful Image.', use_column_width=True)
 
     st.success('successful')
 
